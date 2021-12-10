@@ -1,0 +1,91 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+
+    <title>registration Form</title>   
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="color.js"></script> 
+ </head> 
+  <body onload="setbackground();">   
+   
+     <!-- Main div code -->
+   
+      <a href="#faq1" onClick="highlight()"></a>
+     <div id="main">
+      <div class="h-tag">
+       <h2>Register Your Account</h2>
+      </div>
+     <!-- create account div -->
+     <div class="login">
+      <table cellspacing="2" align="center" cellpadding="8" border="0">
+      <tr>
+      <td align="right">Enter First Name :</td>
+      <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+      </tr>
+      <td align="right"><label>Gender :</label></td>
+					<td align="right">
+                        <input type="radio" name="gender"  value="female" id="female"> Female
+						<input type="radio" name="gender" value="Male" id="male"> Male</td>
+				     </tr>
+                       <tr>
+      <td align="right">Enter Email ID :</td>
+      <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+     </tr>
+     <tr>
+     <td align="right">Enter Username :</td>
+     <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+     </tr>
+     <tr>
+     <td align="right">Enter Password :</td>
+     <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+      </tr>
+     <tr>
+     <td align="right">Enter Confirm Password :</td>
+     <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+     </tr>
+    <tr align="center">
+        <td>
+            <p>
+                SELECT YOUR COURSE :
+                       <select type="text" value="" name="Subject">
+                         <option>SELECT</option>  
+                        <option>BTECH</option>
+                        <option>BBA</option>
+                       <option>BCA</option>
+                       <option>B.COM</option>
+                    
+                </select>
+            </p>
+        </td>
+    </tr>
+    <tr></tr>
+     <tr align="right">
+         <td>
+       <label> Select city : </label>
+        <select name="city"><br>
+            <option name="select">SELECT</option><br>   
+        <option name="Lucknow">LUCKNOW</option><br>
+        <option name="Kanpur">KANPUR</option><br>
+          <option name="Delhi">DELHI</option></td>
+          </select><br>
+            </td><br>
+             <tr align="right">
+              <td>
+            <input type="checkbox" name="terms" id="terms" value="T&C">
+                    <label>Terms and Conditons</label><br>
+                    </td>
+                  </tr> 
+    <tr>
+    <td>   
+    <input type="reset" value="Clear Form" id="res" class="btn" />
+    <input type="submit" value="Sumbit" class="btn" onclick="registration()" /></td>
+    </tr>
+    </table>
+    </div>
+    <!-- create account box ending here.. -->
+    </div>
+    <!-- Main div ending here... -->
+    
+    <script src="ajax.js"></script> 
+</body>    
+</html>     
